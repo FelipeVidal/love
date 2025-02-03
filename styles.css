@@ -80,6 +80,7 @@ svg {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index:99999
 }
 
 @media screen and (max-width: 600px) {
