@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  background-color: pink;
+}
+
+/* Corazón dibujado */
+#corazon-dibujado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  z-index: -1; /* Detrás del mensaje */
+  display: none;
+
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mensaje de aniversario */
+.mensaje {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  z-index: 1; /* Encima del corazón */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.mensaje h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.mensaje p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Collage de imágenes */
+.collage img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  opacity: 0; /* Inicialmente invisibles */
+  animation: caer linear;
+}
+
+@keyframes caer {
+  from {
+    top: -10%;
+    opacity: 1;
+  }
+  to {
+    top: 65%;
+    opacity: 0;
+  }
+}
+
+/* Botón de control de música */
+#control-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
