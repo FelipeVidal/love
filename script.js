@@ -58,10 +58,10 @@ function cicloImagenes1() {
       img.src = imagenSrc;
       img.style.left = `${Math.random() * 20}vw`;
       img.style.top = `-10%`;
-      img.style.animationDuration = '5s';
+      img.style.animationDuration = '10s';
       collage.appendChild(img);
       index1++;
-    }, index * 2000);
+    }, index * 4000);
   })
 
 }
@@ -77,9 +77,9 @@ function cicloImagenes2() {
       img.src = imagenSrc;
       img.style.right = `${Math.random() * 20}vw`;
       img.style.top = `-10%`;
-      img.style.animationDuration = '5s';
+      img.style.animationDuration = '10s';
       collage.append(img);
-    }, index * 2000);
+    }, index * 4000);
   });
 }
 
