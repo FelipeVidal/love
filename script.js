@@ -66,7 +66,7 @@ function cicloImagenes1() {
 
 }
 
-setInterval(cicloImagenes1, 40000);
+setInterval(cicloImagenes1, 100000);
 
 
 
