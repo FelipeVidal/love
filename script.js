@@ -66,7 +66,7 @@ function cicloImagenes1() {
 
 }
 
-setInterval(cicloImagenes1, 35000);
+setInterval(cicloImagenes1, 50000);
 
 
 
@@ -83,7 +83,7 @@ function cicloImagenes2() {
   });
 }
 
-setInterval(cicloImagenes2, 40000);
+setInterval(cicloImagenes2, 60000);
 
 // Dibujar un corazón SVG cada cierto tiempo
 function dibujarCorazonSVG() {
